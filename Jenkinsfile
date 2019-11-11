@@ -14,7 +14,7 @@ pipeline {
         stage('Pylint-Report') {
             steps {
                 recordIssues (
-                    tool: PyLint()
+                    tool: pyLint()
                 )    
             }
         }
